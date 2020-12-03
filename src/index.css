@@ -1,0 +1,86 @@
+body {
+  background-color: #ebebeb;
+}
+.searchbox {
+  /*definint width of form element*/
+  width: 350px;
+  /*centering the form element*/
+  margin: 100px auto;
+}
+input[type="search"] {
+  padding: 5px;
+  font-size: 15px;
+  color: #1f5350;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+  color: #b1e0de;
+}
+a {
+  display: block;
+  /*removing underlines from anchor element*/
+  text-decoration: none;
+  color: #1f5350;
+  font-size: 15px;
+  background-color: #ace5e2;
+  padding: 10px;
+}
+ul {
+  /*removing predefined bullet points from list*/
+  list-style: none;
+  /*removing padding from list items*/
+  padding: 0;
+  width: 465px;
+}
+ul a {
+  margin-bottom: 10px;
+}
+/*adding effect when the mouse is hovered over list item*/
+/* ul li a:hover {
+  color: #b23b61;
+  background: #ecd1da;
+} */
+/*moving it slightly toware right when hovered*/
+ul a:hover {
+  /*transform*/
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+  background-color: #b23b61;
+  cursor: pointer;
+}
+
+ul a:focus {
+  /*transform*/
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+  background-color: #b23b61;
+  cursor: pointer;
+}
+/*now first we will hide the suggestion list*/
+/* .suggestions li {
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  } */
+/*and make the suggestion reappear when user focus on search field*/
+/* input[type="search"]:focus + .suggestions li {
+    height: 63px;
+  } */
+
+.byline {
+  text-align: center;
+  font-size: 18px;
+}
+.byline a {
+  text-decoration: none;
+  color: #1f5350;
+}
